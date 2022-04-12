@@ -31,7 +31,7 @@ public class EmployeeFailedServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		PrintWriter out = response.getWriter();
 		out.println("<h1> Employee addition failed</h1>");
-		out.println("<h2> Go to Registration Page <a href = '/registerEmployee'>Click here</a></h2>");
+		out.println("<h2> Go to Registration Page <a href = '<%= request.getContextPath() %>/registerEmployee'>Click here</a></h2>");
 	}
 
 }

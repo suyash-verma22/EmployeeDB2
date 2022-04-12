@@ -1,6 +1,7 @@
 package com.registration.controller;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -56,6 +57,9 @@ public class EmployeeServlet extends HttpServlet {
 		try {
 			result = empDao.registerEmployee(emp);
 		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
